@@ -7,10 +7,11 @@ layout: home
 
 
 <h1>
-	what's more？
+	<!-- what's more？ -->
+	最新的几篇
 </h1>
 
-{% for post in site.related_posts %}
+{% for post in site.posts limit:5 %}
 <ul class="ddv-post-list">
 	<li>
 		<span class="ddv-post-list-title"> 
@@ -22,7 +23,10 @@ layout: home
 		<span class="ddv-post-list-date">
 			---- {{ post.date|date:"%Y-%m-%d" }}
 		</span>
+
 	</li>
 </ul>
-
 {% endfor %}
+更多的内容请到[归档](/archive)里面找
+
+

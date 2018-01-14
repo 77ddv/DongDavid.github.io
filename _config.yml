@@ -18,7 +18,7 @@ email: ddv576029053@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   what should I say?
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "http://dongdavid.cc" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: dongdavid
 github_username:  dongdavid
 author: DongDavid
@@ -28,8 +28,8 @@ categoriess:
 # Build settings
 markdown: kramdown
 toc_levels: 6
-paginate: 5
-paginate_path: "/page:num"
+# paginate: 5
+# paginate_path: "/page:num"
 timezone: Asia/Shanghai
 # paginate_path: "blog/page:num"
 # theme: minima
