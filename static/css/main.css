@@ -1,0 +1,102 @@
+* {
+    font-family: 微软雅黑;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    border-bottom: 3px solid
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    width: 99%;
+    padding: 0;
+    height: 100%;
+}
+.ddv-home-body {
+    background-image: url(/assets/a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    height: 100%;
+}
+.ddv-motto {
+    clear: both;
+    text-align: right;
+    font-size: 0.8em;
+    color: gray;
+}
+.ddv-motto p {}
+.ddv-motto p:first-child {
+    /*margin-right: 20px;*/
+}
+.ddv-motto p span {
+    white-space: nowrap;
+}
+.ddv-container {
+    /*max-width: 540px;*/
+    width: 90%;
+    margin: auto;
+}
+/*.ddv-header .ddv-nav {
+    text-align: left;
+    display: flex;
+}*/
+
+.ddv-header .ddv-nav li {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+.ddv-header .ddv-nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+.ddv-header .ddv-nav li a:hover {
+    border-bottom: solid 3px #6C7B8B;
+}
+.ddv-footer {
+    bottom: 2em;
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+.ddv-hr {
+    clear: both;
+}
+.ddv-post-header small {
+    font-size: 0.5em;
+    margin-left: 3em;
+}
+.ddv-post-content {
+    min-height: 300px;
+    font-size: 1em;
+}
+.ddv-post-list li {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.ddv-post-list .ddv-post-list-title {
+    font-size: 1.2em;
+}
+.ddv-post-list .ddv-post-list-date {
+    font-size: 0.8em;
+}
+.ddv-archive {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}

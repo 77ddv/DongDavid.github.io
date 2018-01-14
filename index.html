@@ -1,144 +1,28 @@
 ---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-
 ---
-<div class="container">
-      <!-- Top Navigation -->
-      
-    <header>
-      
-    </header>
-    <div class="component">
 
-        <ul class="align">
-          <li>
-            <figure class="book" >
 
-              <!-- Front -->
+<h1>
+	what's more？
+</h1>
 
-              <ul class="paperback_front">
-                <li>
-                  <span class="ribbon">随笔</span>
-                  <img src="images/green.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
+{% for post in site.related_posts %}
+<ul class="ddv-post-list">
+	<li>
+		<span class="ddv-post-list-title"> 
+			<a href="{{ baseurl }}{{ post.url }}">
+				{{ post.title }}
+			</a>
+		</span> 
+			  
+		<span class="ddv-post-list-date">
+			---- {{ post.date|date:"%Y-%m-%d" }}
+		</span>
+	</li>
+</ul>
 
-              <!-- Pages -->
-
-              <ul class="ruled_paper">
-                <li></li>
-                <li>
-                   <a class="btn smallbtn" href="/life">  随笔小记</a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-
-              <!-- Back -->
-
-              <ul class="paperback_back">
-                <li>
-                  <img src="images/green.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
-              <figcaption>
-         <h1>Diary</h1>
-         <span>By Dong David</span>
-         <p>随笔小记 </p>
-       </figcaption>
-            </figure>
-          </li>
-        <br>
-         <li>
-            <figure class="book">
-
-              <!-- Front -->
-
-              <ul class="paperback_front">
-                <li>
-                  <span class="ribbon">代码</span>
-                  <img src="images/violet.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
-
-              <!-- Pages -->
-
-              <ul class="ruled_paper">
-                <li></li>
-                <li>
-                  <a class="btn smallbtn" href="/coding">  点滴代码</a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-
-              <!-- Back -->
-
-              <ul class="paperback_back">
-                <li>
-                  <img src="images/violet.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
-              <figcaption>
-         <h1>ProgramLog</h1>
-         <span>By Dong David or others</span>
-         <p>记录了平时碰到的问题、敲代码的心得。</p>
-       </figcaption>
-            </figure>
-          </li>
-            <li>
-            <figure class="book">
-
-              <!-- Front -->
-
-              <ul class="paperback_front">
-                <li>
-                   <span class="ribbon">分享</span>
-                  <img src="images/bg.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
-
-              <!-- Pages -->
-
-              <ul class="ruled_paper">
-                <li></li>
-                <li>
-                  <a class="btn smallbtn" href="https://github.com/dongdavid">Github </a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-
-              <!-- Back -->
-
-              <ul class="paperback_back">
-                <li>
-                  <img src="images/bg.jpg" alt="" width="100%" height="100%">
-                </li>
-                <li></li>
-              </ul>
-               <figcaption>
-         <h1>Github</h1>
-         <span>By Dong David</span>
-         <p>一些粗浅的分享 </p>
-       </figcaption>
-
-            </figure>
-          </li>
-        </ul>
-      </div>
-      
-    </div>
-
-<script type="text/javascript">
-$("head").append('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />');
-
-</script>
+{% endfor %}
