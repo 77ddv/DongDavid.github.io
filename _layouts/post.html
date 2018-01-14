@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<div class="home-menu">
+  <div class="home-icon-con">
+    <a class="home-menu-icon" href="/">Dong David</a>
+    <a class="home-follow" href="#" title="Contact Me">+</a>
+  </div>
+  <div class="home-contact">
+    <a href=" http://weibo.com/u/2162630852 " target="_blank"><img src="/images/weibo.ico" alt="" width="25" /></a>
+    <a href="zhihu.com/people/dongdavid" target="_blank"><img src="/images/zhihu.ico" alt="" width="25" /></a>
+    <a href="https://github.com/dongdavid" target="_blank"><img src="/images/github.png" alt="" width="25" /></a>
+  </div>
+</div>
+<link rel="stylesheet" href="{{ BASE_PATH }}/frres/prettify/prettify.css" />
+<style type="text/css">
+  body {
+    background: #e8e8e8;
+  }
+  .entry {
+    min-height: 800px;
+  }
+  @media screen and (max-width: 750px) {
+    body {
+      background: #fff;
+    }
+  }
+  
+  @media screen and (max-width: 1020px) {
+    body {
+      background: #fff;
+    }
+  }
+</style>
+
+<div id="content">
+  <div class="entry">
+    <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+    <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
+    {{ content }}
+   
+  </div>
+
+  <div class="sidenav">
+    <h2>程序人生</h2>
+    <ul class="artical-list">
+      {% for post in site.categories.coding %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h2>生活随笔</h2>
+    <ul class="artical-list">
+      {% for post in site.categories.life %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  
+  </div>
+  <div class="navi"></div>
+
+</div>
+  <script type="text/javascript">
+    $(function() {
+      $('.home-follow').click(function(e) {
+        e.preventDefault();
+
+        if ($('.home-contact').is(':visible')) {
+          $('.home-contact').slideUp(100);
+        } else {
+          $('.home-contact').slideDown(100);
+        }
+      });
+    })
+  </script>
+<script src="/frres/post.js"></script>
+<!-- <a id="scrollTop" href="javascript:scroll(0,0)" class="icon_top"> <img src="/images/icon_top.png"></a> -->
+<br><br>
