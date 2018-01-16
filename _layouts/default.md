@@ -11,7 +11,7 @@
   	<!-- <meta name="renderer" content="webkit"> -->
 	<link rel="stylesheet" href="/static/css/main.css">
 </head>
-<body>
+<body id="body">
 
 <div class="ddv-container" id="container">
 {% include header.html %}

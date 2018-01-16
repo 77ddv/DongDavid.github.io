@@ -18,12 +18,31 @@ html, body {
     padding: 0;
     height: 100%;
 }
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 1;
+        /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0.5;
+        /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 0;
+        /*结尾状态 透明度为1*/
+    }
+}
 .ddv-home-body {
     background-image: url(/assets/a.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: auto;
     height: 100%;
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+    transition: 10s;
 }
 .ddv-motto {
     clear: both;
