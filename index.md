@@ -27,10 +27,13 @@ layout: home
 	</li>
 </ul>
 {% endfor %}
-更多的内容请到[归档](/archive)里面找
+更多的内容请到[【归档】](/archive)里面找
 
 
 <script>
 	document.body.className = 'ddv-home-body';
-	setTimeout(function(){document.body.className = 'active';}, 1000);
+	setTimeout(function(){
+		// document.body.classList.add('active');
+		document.body.className = 'active';
+	}, 1000);
 </script>

@@ -4,6 +4,9 @@
 li {
     list-style: none;
 }
+#markdown-toc li {
+    list-style: square;
+}
 a {
     text-decoration: none;
     color: #000000;
@@ -18,6 +21,11 @@ html, body {
     padding: 0;
     height: 100%;
 }
+body {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
 .ddv-home-body {
     background-image: url(/assets/a.png);
     background-repeat: no-repeat;
@@ -28,7 +36,8 @@ html, body {
 }
 .active {
     opacity: 1;
-    transition: 10s;
+    transition: opacity 10s;
+    /*background-color: #ffcc80 transition: 10s;*/
 }
 .ddv-motto {
     clear: both;
@@ -44,15 +53,11 @@ html, body {
     white-space: nowrap;
 }
 .ddv-container {
-    /*max-width: 540px;*/
+    max-width: 768px;
     width: 90%;
     margin: auto;
+    flex: 1;
 }
-/*.ddv-header .ddv-nav {
-    text-align: left;
-    display: flex;
-}*/
-
 .ddv-header .ddv-nav li {
     float: left;
     margin-left: 20px;
@@ -67,36 +72,58 @@ html, body {
     border-bottom: solid 3px #6C7B8B;
 }
 .ddv-footer {
-    bottom: 2em;
     width: 90%;
+    max-width: 768px;
     margin: auto;
     height: 30px;
-    margin-top: 30px;
-    padding-bottom: 5px;
+}
+.ddv-footer span {
+    white-space: nowrap;
 }
 .ddv-hr {
     clear: both;
 }
-.ddv-post-header small {
-    font-size: 0.5em;
+.ddv-post-header {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.ddv-post-header h1 {
+    font-size: 1.4em;
+}
+.ddv-post-header p {
+    font-size: 0.8em;
     margin-left: 3em;
+    white-space: nowrap;
+    align-self: flex-end;
 }
 .ddv-post-content {
-    min-height: 300px;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: normal;
     font-size: 1em;
+}
+.ddv-post-content h2 {
+    font-size: 1.3em;
+}
+.ddv-post-content h3 {
+    font-size: 1.2em;
+}
+.ddv-post-content h4 {
+    font-size: 1.1em;
 }
 .ddv-post-list li {
     display: flex;
     display: -webkit-flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
 }
 .ddv-post-list .ddv-post-list-title {
     font-size: 1.2em;
 }
 .ddv-post-list .ddv-post-list-date {
     font-size: 0.8em;
+    align-self: flex-end;
+    white-space: nowrap;
 }
 .ddv-archive {
     display: flex;
@@ -104,4 +131,14 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+}
+.ddv-archive-item {
+    flex: 1;
+}
+.code {
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    background-color: black;
+    color: white;
 }

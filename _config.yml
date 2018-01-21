@@ -27,6 +27,8 @@ categoriess:
   - life
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 toc_levels: 6
 # paginate: 5
 # paginate_path: "/page:num"
