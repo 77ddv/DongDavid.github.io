@@ -2,7 +2,7 @@
 layout: post
 title: tp框架分页样式修改
 description: tp框架分页样式动态设置失败的解决方法
-category: coding
+category: code
 tag: tp
 ---
 
