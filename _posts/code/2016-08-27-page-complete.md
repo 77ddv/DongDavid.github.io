@@ -3,7 +3,7 @@ layout: post
 title: 完成了我的主页
 category: code
 description: 重新修改了我的主页，终于算是完成了！。
-tag: 诗经
+tag: 随笔小记
 ---
 
 ## Re 从零开始的主页
