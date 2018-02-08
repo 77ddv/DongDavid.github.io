@@ -83,20 +83,6 @@ body {
 .ddv-hr {
     clear: both;
 }
-.ddv-post-header {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between;
-}
-.ddv-post-header h1 {
-    font-size: 1.4em;
-}
-.ddv-post-header p {
-    font-size: 0.8em;
-    margin-left: 3em;
-    white-space: nowrap;
-    align-self: flex-end;
-}
 .ddv-post-content {
     width: 100%;
     word-wrap: break-word;
@@ -141,4 +127,17 @@ body {
     display: block;
     background-color: black;
     color: white;
+}
+.post {
+    width: 100%;
+}
+.post-header-tag {
+    text-align: right;
+}
+.post-header-date {
+    text-align: center;
+    color: gray
+}
+.post-header-title {
+    text-align: center;
 }
